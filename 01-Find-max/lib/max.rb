@@ -1,4 +1,8 @@
+# Find the maximum/highest number between two numbers
 def max(a, b)
-  # TODO: return the highest number of a and b
-
+  max = a
+  (a..b).each do |number|
+    max = number if max < number
+  end
+  return max
 end
