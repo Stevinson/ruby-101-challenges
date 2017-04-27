@@ -11,6 +11,6 @@ def scrabble_counter(sentence)
   # Remove everything apart from letters
   array_of_letters = sentence.upcase.gsub(/[.! ]/, "").split("")
   array_of_letters.each { |letter| score += SCRABBLE_POINTS[letter] }
-  return score
+  return  score
 end
 
