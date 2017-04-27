@@ -1,4 +1,7 @@
+# Return true/false depending if the sentence is a pangram
 def pangram?(sentence)
-  # TODO: return true/false depending if the sentence is a pangram (contains every letter of the alphabet)
-
+  return ('a'..'z').all? { |letter| sentence.downcase.include?(letter) }
 end
+
+
+
