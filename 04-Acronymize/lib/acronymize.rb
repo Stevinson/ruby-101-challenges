@@ -1,4 +1,5 @@
+# return the acronym on the given sentence
 def acronymize(sentence)
-  # TODO: return the acronym on the given sentence
-
+  sentence.upcase.split(" ").map { |word| word[0] }.join
 end
+
